@@ -1,0 +1,8 @@
+[
+    {
+        "text": "lorem ipsum",
+        "authorName": "Tomas klimo",
+        "authorImage": "path/to/image.jpg",
+        "authorAddress": "Santa Cruz, CA"
+    }
+]
