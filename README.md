@@ -5,6 +5,7 @@ Webpage for autoflex servis
 ## Zakladne poznatky
 
 - ikony najlepsie mat v `.svg` formate
+- figma link: https://www.figma.com/design/FtovLi8Yn7L6SCtd6ZudP2/Car-Services-(Community)?node-id=0-1&t=cSkcMAGeGaPq8j3L-1
 
 ## TODO
 
