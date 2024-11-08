@@ -16,8 +16,11 @@ const Header = () => {
                 <li>
                     <a href="/about">O nás</a>
                 </li>
-                <li>
-                    <a href="/service">Služby</a>
+                <li className="services">
+                    <a href="/service" className="service-link">
+                        Služby
+                        <span className="arrow">&#62;</span>
+                    </a>
                 </li>
                 <li>
                     <a href="/contacts">Kontakty</a>

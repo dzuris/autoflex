@@ -1,0 +1,66 @@
+.imgOne {
+    width: 100% !important;
+    height: 530px !important;
+    max-width: 500px !important;
+}
+
+.aboutHeader{
+    display: flex;
+    align-items: center; 
+}
+
+
+.rectangle-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.column h4 {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+    color: #3FAB3E;
+    margin: 0;
+}
+
+.column p {
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.column h2 {
+    font-size: 28px;
+    margin: 10px 0;
+    font-family: 'Days One', sans-serif;
+    color: #333;
+}
+
+.text {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    text-align: left;
+    margin: 10px 40px 0 100px;
+    width: 460px;
+}
+
+.column img {
+    align-self: flex-start;
+    width: 100%;
+    max-width: 10000px;
+    height: auto;
+    object-fit: cover;
+    margin-top: 0;
+}

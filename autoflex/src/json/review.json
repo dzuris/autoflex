@@ -1,0 +1,35 @@
+[
+    {
+        "text": "Lo et dolore magna aliqua.",
+        "authorName": "Author name",
+        "authorImage": "/images/face-1.png",
+        "authorAddress": "Address city, state or sth"
+    },
+
+    {
+        "text": "Lorem ipsum  sit amet, consectetur adipiscing elit, sed do eiudolorsmod tempor incididunt ut labore et dolore magna aliqua.",
+        "authorName": "Author name",
+        "authorImage": "/images/face-2.png",
+        "authorAddress": "Address city, state or sth"
+    },
+
+    {
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "authorName": "Author name",
+        "authorImage": "/images/face-3.png",
+        "authorAddress": "Address city, state or sth"
+    },
+    {
+        "text": "na aliqua.",
+        "authorName": "Author name",
+        "authorImage": "/images/face-3.png",
+        "authorAddress": "Address city, state or sth"
+    },
+    {
+        "text": "Je to kokotina .",
+        "authorName": "Adam DZ.",
+        "authorImage": "/images/face-3.png",
+        "authorAddress": "Turie"
+    }
+
+]

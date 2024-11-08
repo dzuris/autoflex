@@ -1,0 +1,78 @@
+[
+    {
+        "title": "MECHANICKÉ PRÁCE",
+        "photoUrl": "/images/Maintenance.png"
+    },
+
+    {
+        "title": "SERVISNÉ PREHLIADKY",
+        "photoUrl": "/images/Inspection.png"
+    },
+    
+    {
+        "title": "TESTOVANIE AUTOBATÉRIÍ",
+        "photoUrl": "/images/Car Battery.png"
+    },
+
+    {
+        "title": "ELEKTRIKÁRSKE PRÁCE",
+        "photoUrl": "/images/Connected.png"
+    },
+
+    {
+        "title": "PNEUSERVIS",
+        "photoUrl": "/images/Flat Tire.png"
+    },
+    
+    {
+        "title": "OPRAVY A VÝMENY AUTOSKIEL",
+        "photoUrl": "/images/Car Wipers.png"    
+    },
+
+    {
+        "title": "LAKÝRNICKE PRÁCE",
+        "photoUrl": "/images/Paint Sprayer.png"    
+    },
+
+    {
+        "title": "GEOMETRIA NÁPRAU",
+        "photoUrl": "/images/Steering Wheel.png"    
+    },
+    
+    {
+        "title": "OPRAVY A PLNENIE KLIMATIZÁCIÍ",
+        "photoUrl": "/images/Winter.png"    
+    },
+
+    {
+        "title": "KAROSÁRSKE PRÁCE",
+        "photoUrl": "/images/Car Crash.png"    
+    },
+
+    {
+        "title": "PRÍPRAVA NA STK",
+        "photoUrl": "/images/Car Insurance.png"    
+    },
+    
+    {
+        "title": "NASTAVENIE A LEŠTENIE SVETIEL",
+        "photoUrl": "/images/Headlight.png"    
+    },
+
+    {
+        "title": "DIAGNOSTIKA VOZIDIEL",
+        "photoUrl": "/images/Engine.png"    
+    },
+
+    {
+        "title": "OPRAVY PREVODOVIEK",
+        "photoUrl": "/images/Automation.png"    
+    },
+    
+    {
+        "title": "MONTÁŽ ŤAŽNÉHO ZARIADENIA",
+        "photoUrl": "/images/Trailor.png"    }
+    
+ 
+]
+

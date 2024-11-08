@@ -2,3 +2,23 @@
   text-align: center;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3FAB3E;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: green;
+}
