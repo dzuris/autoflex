@@ -5,6 +5,7 @@ import MainPage from "./mainPage";
 import AllServices from "./allServices";
 import About from "./about"
 import Review from "./review"
+import Reservation from "./reservation"
 
 const App = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -42,7 +43,7 @@ const App = () => {
         <Review/>
       </div>
       <div>
-        <h1>HELLO</h1>
+        <Reservation/>
       </div>
 
       {showScrollTop && (
