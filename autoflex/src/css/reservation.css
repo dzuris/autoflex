@@ -1,8 +1,74 @@
-.reservation{
+.reservation {
     margin-top: 90px;
     margin-left: 2px;
+    position: relative;
 }
 
-.background{
-    width: 70%;
+.background {
+    width: 80%; 
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.content {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 20px; 
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0 20px;
+    color: white;
+}
+
+.text-rec {
+    grid-column: 1; 
+    z-index: 2;
+    margin-left: 100px;
+}
+
+.text-rec h4 {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Days One', sans-serif;
+}
+
+.text-rec h2 {
+    margin: 5px 0 0;
+    font-size: 28px;
+    font-family: 'Days One', sans-serif;
+    width: 500px;
+}
+
+.text-rec p {
+    width: 450px;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.black-rectangle {
+    grid-column: 2;
+    width: 60%; 
+    height: 550px; 
+    max-height: 100%;
+    background-color: white;
+    border: 0.1px solid black;
+    z-index: 1;
+    align-self: center;
+    margin-left: 25%; 
+}
+
+.reservation-header {
+    display: flex;
+    align-items: center; 
+}
+
+.icon {
+    margin-right: 8px; 
+    font-size: 20px; 
+    color: white; 
 }
