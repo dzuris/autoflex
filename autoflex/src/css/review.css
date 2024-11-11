@@ -122,10 +122,10 @@
     position: absolute;
     top: 70%; 
     left: 53%; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
     display: flex;
     justify-content: space-between;
-    width: 100%; 
+    width: 90%; 
     gap: 20px;
     margin: 0;
 }
@@ -145,9 +145,13 @@
     transform: translateY(-50%); 
 }
 
+.arrow-button:first-child {
+    left:-5.7%; 
+}
+
 
 .arrow-button:last-child {
-    right: 7.7%; 
+    right: 2.7%; 
 }
 
 .arrow-button:hover {
