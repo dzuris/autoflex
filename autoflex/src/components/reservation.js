@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../css/reservation.css';
 import gt from '../images/greenTire.png';
 import { RiPulseFill } from 'react-icons/ri';
@@ -6,7 +7,28 @@ import { FaLocationDot } from "react-icons/fa6";
 import {LuPhoneCall} from 'react-icons/lu'
 import { FaRegEnvelope } from "react-icons/fa";
 
-const Header = () => {
+const Reservation = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+        .sendForm('service_b5l5qbi',  //service_id
+        'template_v52wni7',            //template_id
+        form.current, {
+            publicKey: 'zSGVd6X9Rpi9MFy3H',     // public_key --- integration --- API KEY
+        })
+        .then(
+            () => {
+            console.log('SUCCESS!');
+            form.current.reset();
+            },
+            (error) => {
+            console.log('FAILED...', error.text);
+            },
+        );
+    };
     return (
         <div className="reservation">
             <img src={gt} alt="Zelene pozadie" className="background" />
@@ -51,13 +73,13 @@ const Header = () => {
                 <div className="black-rectangle">
                 <div className="mid-rec">
                     <h1>REZERVÁCIA</h1>
-                    <form className="reservation-form">
-                        <input type="text" placeholder="MENO A PRIEZVISKO" className="form-input" />
-                        <input type="tel" placeholder="TELEFÓN" className="form-input" />
-                        <input type="email" placeholder="EMAIL" className="form-input" />
-                        <input type="datetime-local" className="form-input" />
-                        <textarea class="form-input-big" placeholder="EČV VOZIDLA A PROBLÉM"></textarea>
-                        <button type="submit" className="submit-button">ODOSLAŤ</button>
+                    <form className="reservation-form"  ref={form} onSubmit={sendEmail}>
+                        <input type="text" placeholder="MENO A PRIEZVISKO" className="form-input" name='user_name'/>
+                        <input type="tel" placeholder="TELEFÓN" className="form-input" name='user_phone'/>
+                        <input type="email" placeholder="EMAIL" className="form-input" name='user_email' />
+                        <input type="datetime-local" className="form-input" name='user_date' />
+                        <textarea class="form-input-big" placeholder="EČV VOZIDLA A PROBLÉM" name='message'></textarea>
+                        <button type="submit" className="submit-button" value="Send">ODOSLAŤ</button>
                     </form>
                 </div>
             </div>
@@ -66,4 +88,4 @@ const Header = () => {
     );
 };
 
-export default Header;
+export default Reservation;
