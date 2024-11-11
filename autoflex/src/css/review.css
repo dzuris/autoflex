@@ -30,7 +30,7 @@
 .icon {
     margin-right: 8px; 
     font-size: 20px; 
-    color: #3FAB3E; 
+    color: #3FAB3E !important; 
 }
 
 .review-boxes {

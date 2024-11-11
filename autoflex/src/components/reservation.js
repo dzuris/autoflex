@@ -35,7 +35,7 @@ const Reservation = () => {
             <div className="content">
                 <div className="text-rec">
                     <div className="reservation-header">
-                        <RiPulseFill className="icon" />
+                        <RiPulseFill className="icon-l" />
                         <h4>OBJEDNAJTE SA</h4>
                     </div>
                     <h2>DOSTANEME VÁS SPÄŤ NA CESTU</h2>
