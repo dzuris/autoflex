@@ -61,10 +61,17 @@
 }
 
 .review-text {
-    font-size: 18px;
-    font-family: 'DM Sans', sans-serif;
-    margin-bottom: 10px;
-    position: relative; 
+    width: 100%;
+    /* padding: 10px; */
+    font-size: 12px;
+    height: 120px;
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+    font-family: 'Days One', sans-serif;
+    resize: none;
+    overflow-y: auto; 
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
 }
 
 .author-photo {

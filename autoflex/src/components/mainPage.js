@@ -7,6 +7,11 @@ import rt from '../images/rate.png';
 import {LuPhoneCall} from 'react-icons/lu'
 
 const MainPage = () => {
+
+    const scrollToReservation = () => {
+        document.getElementById("reservation-section").scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <div>
             <div className="full-page-image">
@@ -15,7 +20,7 @@ const MainPage = () => {
                     <h1>SPOĽAHLIVÝ AUTOSERVIS S TRADÍCIOU</h1>
                     <p>PROFESIONÁLNE SLUŽBY PRE VŠETKY TYPY VOZIDIEL. RÝCHLY, SPOĽAHLIVÝ A ODBORNÝ SERVIS.</p>
                     <div className="first-rectangle">
-                        <button className="action-button">REZERVÁCIA TERMÍNU</button>
+                        <button onClick={scrollToReservation} className="action-button">REZERVÁCIA TERMÍNU</button>
                         <LuPhoneCall className="phoneIcon"/>
                         <div className="number-tog">
                             <h3>+421 911 528 064</h3>

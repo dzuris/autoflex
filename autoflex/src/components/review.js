@@ -39,7 +39,7 @@ const Review = () => {
                     <div className="review-box" key={index}>
                         <div className="box-under">
                             <FaQuoteRight color="#3FAB3E" size={30} />
-                            <p className="review-text">{review.text}</p>
+                            <div className="review-text">{review.text}</div>
                             <div className="box-colm">
                                 <img src={review.authorImage} alt={review.authorName} className="author-photo" />
                                 <div className="adress-under">

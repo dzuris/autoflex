@@ -4,6 +4,7 @@ import logo from '../images/logo.png';
 
 
 const Header = () => {
+
     return (
         <nav className="nav">
             <a href="/" className="logo-title">
@@ -14,7 +15,7 @@ const Header = () => {
                     <a href="/home">Domov</a>
                 </li>
                 <li>
-                    <a href="/about">O nás</a>
+                    <a href="#about-section">O nás</a>
                 </li>
                 <li className="services">
                     <a href="/service" className="service-link">
@@ -23,7 +24,7 @@ const Header = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="/contacts">Kontakty</a>
+                    <a href="#reservation-section">Kontakty</a>
                 </li>               
             </ul>
         </nav>

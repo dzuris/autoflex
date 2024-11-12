@@ -33,16 +33,16 @@ const App = () => {
         <Header />
         <MainPage />
       </div>
-      <div>
+      <div id="service-section">
         <AllServices/>
       </div>
-      <div>
+      <div id="about-section">
         <About/>
       </div>
-      <div>
+      <div id="review-section">
         <Review/>
       </div>
-      <div>
+      <div id="reservation-section">
         <Reservation/>
       </div>
 
