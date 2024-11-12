@@ -6,6 +6,7 @@ import AllServices from "./allServices";
 import About from "./about"
 import Review from "./review"
 import Reservation from "./reservation"
+import Fq from "./fq"
 
 const App = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -44,6 +45,9 @@ const App = () => {
       </div>
       <div id="reservation-section">
         <Reservation/>
+      </div>
+      <div>
+        <Fq />
       </div>
 
       {showScrollTop && (
