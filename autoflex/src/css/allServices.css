@@ -1,30 +1,33 @@
-.services {
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.all-services {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.services-header {
+.all-services-header {
     margin-top: 70px;
     margin-left: 100px;
     display: flex;
     align-items: center; 
 }
 
-.icon {
+.all-icon-r{
     margin-right: 8px; 
     font-size: 20px; 
     color: #3FAB3E; 
 }
 
-.services h3 {
+.all-services h3 {
     font-size: 15px;
     color: #3FAB3E;
     font-family: 'DM Sans', sans-serif;
     margin: 0;
 }
 
-.services h1 {
+.all-services h1 {
     margin-top: 0;
     margin-left: 100px;
     font-size: 24px;
@@ -33,7 +36,7 @@
 }
 
 
-.services-boxes {
+.all-services-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);  
     gap: 20px;                              
@@ -42,7 +45,7 @@
     margin-bottom: 10px;
 }
 
-.service-box {
+.all-service-box {
     display: flex;
     align-items: center;
     max-width: 400px;        
@@ -54,7 +57,7 @@
                 0px 5px 15px rgba(0, 0, 0, 0.2);   
 }
 
-.service-photo {
+.all-service-photo {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -62,39 +65,42 @@
     border-radius: 8px;
 }
 
-.service-title {
+.all-service-title {
     font-size: 18px;
     color: #3FAB3E;
     font-family: 'Days One', sans-serif;
     margin: 0px;
 }
 
-.lastRec {
+.all-lastRec {
     display: flex;
-    align-items: center;      
-    width: 260px;            
+    align-items: center;
+    justify-content: center; 
+    width: 260px;      
+    height: 50px;      
     margin: 30px auto;        
-    border: 1px solid #ddd;
-    border-color: #3FAB3E;
+    border: 1px solid #3FAB3E;
+    transition: background-color 0.3s ease;
 }
 
-.lastRec:hover{
+.all-lastRec:hover {
     background-color: green;
-    transition: color 0.3s ease;
 }
 
-.lastRec h2{
+.all-lastRec a {
     color: #3FAB3E;
     font-family: 'Days One', sans-serif;
     font-size: 14px;
     padding: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
+    text-decoration: none; 
+    text-align: center; 
 }
 
-.lastRec:hover h2,
-.lastRec.clicked h2 {
+.all-lastRec:hover a {
     color: white; 
 }
+
 
 

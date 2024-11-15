@@ -1,10 +1,26 @@
 [
     {
-        "question": "How often should I change the oil",
+        "question": "How often should I change the oil?",
         "answer": "raz za 10 rokov, ak sa to dojebe sry"
     },
     {
-        "question": "When should I check fluid levels",
+        "question": "When should I check fluid levels?",
         "answer": "ked uz ziadny fluid neni, tak predtym"
+    },
+    {
+        "question": "How to check tire pressure?",
+        "answer": "Go to a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station and use a pressure gauge."
+    },
+    {
+        "question": "What is the recommended tire pressure?",
+        "answer": "Typically 32-35 PSI, check your manual for details."
+    },
+    {
+        "question": "How often should I replace my air filter?",
+        "answer": "Every 15,000 to 30,000 miles, depending on conditions."
+    },
+    {
+        "question": "When should I replace windshield wipers?",
+        "answer": "Usually every 6-12 months or when visibility is poor."
     }
 ]

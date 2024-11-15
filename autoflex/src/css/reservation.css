@@ -58,7 +58,6 @@
     max-height: 100%;
     background-color: white;
     border: 0.1px solid black;
-    /* z-index: 1; */
     align-self: center;
     margin-left: 25%; 
 }

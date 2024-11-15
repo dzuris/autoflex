@@ -1,0 +1,192 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-header {
+    /* margin-top: 50px; */
+    margin-left: 120px;
+    display: flex;
+    align-items: center; 
+}
+
+.contact-icon{
+    margin-right: 8px; 
+    font-size: 20px; 
+    color: #3FAB3E; 
+}
+
+.contact h3 {
+    font-size: 15px;
+    color: #3FAB3E;
+    font-family: 'DM Sans', sans-serif;
+    margin: 0;
+}
+
+.contact h1 {
+    margin-top: 0;
+    margin-left: 120px;
+    font-size: 24px;
+    font-family: 'Days One', sans-serif;
+    margin-bottom: 40px;
+}
+
+.contactAllIcons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 160px;
+}
+
+.contactIconWithLabel {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 14px; 
+}
+
+.contactIconWrapper {
+    width: 50px; 
+    height: 50px; 
+    background-color: #3FAB3E; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-right: 10px; 
+}
+
+.contactLocationIcon, .contactPhoneIcon, .contactEnvelopeIcon {
+    font-size: 20px; 
+}
+
+.contactIconLabel {
+    font-size: 14px !important; 
+    color: black; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Days One', sans-serif;
+}
+
+.contact-to-row{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-to-row h2, h6{
+    margin: 0;
+    padding: 0;
+}
+
+.contact-to-row h6{
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contactIconWithLabel-sec{
+    display: flex;
+    align-items: center; 
+    margin-bottom: 14px; 
+    margin-top: 40px;
+}
+
+.contactIconWrapper-sec {
+    width: 50px; 
+    height: 50px; 
+    background-color: white; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3FAB3E;
+    margin-right: 10px; 
+    border: 0.1px solid gray;
+}
+
+.contact-footer{
+    height: 240px;
+    margin-top: 10px;
+    background-color: #3FAB3E; 
+    color: white;
+    padding: 20px 0; 
+    width: 100%; 
+    text-align: left; 
+}
+
+.contact-footer h1{
+    margin-left: 120px;
+    font-size: 24px;
+}
+
+.contactIconLabel-sec{
+    font-size: 14px;
+    font-family: 'Days One', sans-serif;
+}
+
+.contact-to-row .column-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 70px; 
+}
+
+.dif{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.biggerH{
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.contact-map-col{
+    display: flex;
+    flex-direction:row;
+    gap: 260px;
+}
+
+.map{
+    margin-top: 50px;
+}
+
+.footer-p{
+    font-size: 14px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.footer-p p{
+    margin: 8px;
+    padding: 0;
+
+}
+
+.footer-image {
+    position: absolute;
+    bottom: 15px; 
+    right: 10px; 
+    width: 15%; 
+    height: 10%;
+}
+
+.contactArrow-circle {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    /* margin-right: 15px; */
+    transform: rotate(-45deg); 
+    margin-left: 60px;
+    margin-top: 20px;
+    border: 0.1px solid black;
+}
+
+.contactArrow-icon {
+    font-size: 20px;
+    color: black;
+    transform: rotate(45deg); 
+}

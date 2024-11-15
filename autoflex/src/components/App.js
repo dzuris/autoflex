@@ -1,59 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import '../css/App.css';
-import Header from "./Header";
-import MainPage from "./mainPage";
-import AllServices from "./allServices";
-import About from "./about"
-import Review from "./review"
-import Reservation from "./reservation"
-import Fq from "./fq"
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MP from "../pages/mainPage";
+import CP from "../pages/contactPage";
+import OSP from "../pages/ourServicesPage"
 
 const App = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 200) {
-        setShowScrollTop(true);
-      } else {
-        setShowScrollTop(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
-    <div>
+    <Router>
       <div>
-        <Header />
-        <MainPage />
+        <Routes>
+          <Route path="/home" element={<MP />} />
+          <Route path="/contact" element={<CP />} />
+          <Route path="/service" element={<OSP />} />
+        </Routes>
       </div>
-      <div id="service-section">
-        <AllServices/>
-      </div>
-      <div id="about-section">
-        <About/>
-      </div>
-      <div id="review-section">
-        <Review/>
-      </div>
-      <div id="reservation-section">
-        <Reservation/>
-      </div>
-      <div>
-        <Fq />
-      </div>
-
-      {showScrollTop && (
-        <button className="scroll-to-top" onClick={scrollToTop}>↑</button>
-      )}
-    </div>
+    </Router>
   );
 }
 

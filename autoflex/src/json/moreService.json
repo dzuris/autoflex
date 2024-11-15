@@ -1,0 +1,33 @@
+[
+    {
+        "titleMore": "UMYTIE VOZIDLA",
+        "photoUrlMore": "/images/cleaning.png",
+        "textMore": "Postaráme sa o dôkladné umytie exteriéru a interiéru vášho vozidla"
+    },
+    {
+        "titleMore": "NÁHRADNÉ VOZIDLO",
+        "photoUrlMore": "/images/rent.png",
+        "textMore": "Možnosť zapožičania náhradného vozidla počas doby opravy"
+    },
+    {
+        "titleMore": "PICK-UP",
+        "photoUrlMore": "/images/stand.png",
+        "textMore": "Vyzdvihneme vozidlo alebo zákazníka v rámci okolia mesta Žilina"
+    },
+    {
+        "titleMore": "PREDNOSTNÉ VYBAVENIE",
+        "photoUrlMore": "/images/Time.png",
+        "textMore": "Pravidelným zákazníkom vieme poskytnúť prednostné vybavenie opravy"
+    },
+    {
+        "titleMore": "USKLADNENIE PNEU",
+        "photoUrlMore": "/images/Warehouse.png",
+        "textMore": "Pravidelným zákazníkom vieme poskytnúť prednostné vybavenie opravy"
+    },
+    {
+        "titleMore": "VYBAVENIE STK",
+        "photoUrlMore": "/images/task.png",
+        "textMore": "Sprostredkujeme technickú a emisnú kontrolu vášho vozidla"
+    }
+    
+]

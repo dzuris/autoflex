@@ -1,5 +1,5 @@
 import React from "react";
-import '../css/mainPage.css';
+import '../css/welcome.css';
 import mp from '../images/mainPageImg.png';
 import ap from '../images/aproval.png';
 import ln from '../images/loan.png';
@@ -14,15 +14,15 @@ const MainPage = () => {
 
     return (
         <div>
-            <div className="full-page-image">
+            <div className="welcome-full-page-image">
                 <img src={mp} alt="Main page background" />
-                <div className="text-overlay">
-                    <h1>SPOĽAHLIVÝ AUTOSERVIS S TRADÍCIOU</h1>
+                <div className="welcome-text-overlay">
+                    <h1>AUTOSERVIS S TRADÍCIOU V ŽILINE</h1>
                     <p>PROFESIONÁLNE SLUŽBY PRE VŠETKY TYPY VOZIDIEL. RÝCHLY, SPOĽAHLIVÝ A ODBORNÝ SERVIS.</p>
-                    <div className="first-rectangle">
-                        <button onClick={scrollToReservation} className="action-button">REZERVÁCIA TERMÍNU</button>
-                        <LuPhoneCall className="phoneIcon"/>
-                        <div className="number-tog">
+                    <div className="welcome-first-rectangle">
+                        <button onClick={scrollToReservation} className="welcome-action-button">REZERVÁCIA TERMÍNU</button>
+                        <LuPhoneCall className="welcome-phoneIcon"/>
+                        <div className="welcome-number-tog">
                             <h3>+421 911 528 064</h3>
                             <h6>24-HODINOVÁ ASISTENČNÁ LINKA</h6>
                         </div>
