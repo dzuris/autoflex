@@ -3,6 +3,7 @@ import '../css/review.css';
 import { RiPulseFill } from 'react-icons/ri';
 import { FaQuoteRight } from 'react-icons/fa';
 import reviewsData from '../json/review.json';
+import { Link } from "react-router-dom";
 
 const Review = () => {
     const [reviews] = useState(reviewsData);
@@ -27,10 +28,11 @@ const Review = () => {
     };
 
     return (
+        <div>
         <div className="review">
             <div className="review-header">
                 <RiPulseFill className="icon" />
-                <h3>RECENZIE?</h3>
+                <h3>RECENZIE</h3>
             </div>
             <h1>ČO O NÁS HOVORIA KLIENTI</h1>
 
@@ -55,6 +57,12 @@ const Review = () => {
             <div className="review-navigation">
                 <button onClick={goToPreviousReviews} className="arrow-button">&#8592;</button>
                 <button onClick={goToNextReviews} className="arrow-button">&#8594;</button>
+            </div>
+        </div>
+            <div className='all-lastRec'>
+                <Link to="/service" className='all-lastRec'>
+                    <span>ZANECHAJTE NÁM RECENZIU</span>
+                </Link>
             </div>
         </div>
     );

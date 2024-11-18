@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import '../css/mainPage.css';
-import Header from "../components/Header";
+import Header from "../components/bigHeader";
 import Welcome from "../components/welcome";
 import AllServices from "../components/allServices";
 import About from "../components/about";
 import Review from "../components/review";
 import Reservation from "../components/reservation";
 import Fq from "../components/fq";
-// import Contact from '../pages/contact'; 
+import ShowCase from "../components/showCase"
+
 
 const App = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -47,11 +48,14 @@ const App = () => {
         <div id="reservation-section">
           <Reservation />
         </div>
+        {/* <div>
+          <ShowCase/>
+        </div> */}
         <div>
-          <Fq />
+          <Fq id="fq-section" />
         </div>
         <footer className='footer-main'> 
-          <p>© Copyright 2023 Primadona Cars - All rights reserved</p>
+          <p>© Copyright 2024 Marinko x Moresko - All right reserved</p>
         </footer>
 
         {showScrollTop && (

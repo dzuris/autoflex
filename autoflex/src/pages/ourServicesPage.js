@@ -5,6 +5,7 @@ import '../css/ourServicesPage.css';
 import servicesData from '../json/service.json';
 import moreServiceData from '../json/moreService.json'
 import { FaArrowLeft } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 const OurServices = () => {
   const [services] = useState(servicesData);
@@ -15,13 +16,38 @@ const OurServices = () => {
   useEffect(() => {
   }, []);
 
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); 
+  }
+
   return (
     <div>
       <Header/>
       <div className="ourServRow">
         <div className="ourServ">
-                <div className="arrow-circle">
-                  <FaArrowLeft className="arrow-icon" />
+                <div className="arrow-circle"  onClick={handleGoBack} style={{ cursor: 'pointer' }}>
+                  <FaArrowLeft className="arrow-icon"/>
                 </div>
               <div className="ourServ-header">
                   <RiPulseFill className="ourServ-icon" />
@@ -59,6 +85,9 @@ const OurServices = () => {
         <footer className='moreServFoot'>
           <p>© Copyright 2024 Marinko x Moresko - All right reserved</p>
         </footer>
+        {showScrollTop && (
+          <button className="scroll-to-top" onClick={scrollToTop}>↑</button>
+        )}
         </div>
     </div>
   );

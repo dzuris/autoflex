@@ -27,7 +27,7 @@
 .text-rec {
     grid-column: 1; 
     z-index: 2;
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 .text-rec h4 {
@@ -111,12 +111,13 @@
 }
 
 .to-row h2, h6{
-    margin: 0;
+    margin: 2px;
     padding: 0;
 }
 
 .to-row h6{
     font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
 }
 
 .black-rectangle h1 {

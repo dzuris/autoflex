@@ -46,8 +46,8 @@ const Reservation = () => {
                                 <FaLocationDot className="locationIcon"/>
                             </div>
                                 <div className="to-row">
-                                    <h2 className="iconLabel">LOCATION</h2>
-                                    <h6>1265 11th Ave Calgary Alberta Canada</h6>
+                                    <h2 className="iconLabel">NAVŠTÍVTE NÁS</h2>
+                                    <h6>M. R. Štefánika 849, 010 01 Žilina</h6>
                                 </div>
                         </div>
                         <div className="iconWithLabel">
@@ -55,8 +55,8 @@ const Reservation = () => {
                                 <FaRegEnvelope className="envelopeIcon" />
                             </div>
                                 <div className="to-row">
-                                    <h2 className="iconLabel">EMAIL</h2>
-                                    <h6>support@example.com</h6>
+                                    <h2 className="iconLabel">NAPÍŠTE NÁM</h2>
+                                    <h6>autoflex@autoflex.sk</h6>
                                 </div>
                         </div>
                         <div className="iconWithLabel">
@@ -64,8 +64,8 @@ const Reservation = () => {
                                 <LuPhoneCall className="phoneIcon"/>
                             </div>
                                 <div className="to-row">
-                                    <h2 className="iconLabel">PHONE</h2>
-                                    <h6>62 123 4567 890</h6>
+                                    <h2 className="iconLabel">ZAVOLAJTE NÁM</h2>
+                                    <h6>+421 911 528 064</h6>
                                 </div>
                         </div>
                     </div>

@@ -7,15 +7,21 @@ import {LuPhoneCall} from 'react-icons/lu'
 import { FaRegEnvelope } from "react-icons/fa";
 import sl from '../images/smallerLogo.png';
 import { FaArrowLeft } from "react-icons/fa6";
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
-  console.log("Contact page is rendered!");
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); 
+  }
+
   return (
     <div>
       <Header/>
       <div className="contact-map-col">
         <div className="contact">
-              <div className="contactArrow-circle">
+              <div className="contactArrow-circle" onClick={handleGoBack} style={{ cursor: 'pointer' }}>
                   <FaArrowLeft className="contactArrow-icon" />
               </div>
               <div className="contact-header">

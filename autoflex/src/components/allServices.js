@@ -21,14 +21,16 @@ const AllServices = () => {
             <div className="all-services-boxes">
                 {services.map((service, index) => (
                     <div className="all-service-box" key={index}>
-                        <img src={service.photoUrl} alt={service.title} className="all-service-photo" />
+                        <img src={service.photoUrl} alt='As' className="all-service-photo" />
                         <h4 className="all-service-title">{service.title}</h4>
                     </div>
                 ))}
             </div>
-            <div className='all-lastRec'>
-                <Link to="/service">VIAC O NAŠÍCH SLUŽBÁCH</Link>
-            </div>
+                <div className='all-lastRec'>
+                    <Link to="/service" className="all-lastRec">
+                        <span>VIAC O NAŠÍCH SLUŽBÁCH</span>
+                    </Link>
+                </div>
         </div>
     );
 };

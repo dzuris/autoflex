@@ -43,6 +43,7 @@
     margin-top: 10px;
     margin-left: 100px;
     margin-bottom: 10px;
+    background-color: white;
 }
 
 .all-service-box {
@@ -75,32 +76,32 @@
 .all-lastRec {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    width: 260px;      
-    height: 50px;      
-    margin: 30px auto;        
+    justify-content: center;
+    width: 270px;
+    height: 50px;
+    margin: 30px auto;
     border: 1px solid #3FAB3E;
     transition: background-color 0.3s ease;
+    background-color: transparent;
+    cursor: pointer; 
+    text-decoration: none; 
 }
 
 .all-lastRec:hover {
     background-color: green;
 }
 
-.all-lastRec a {
+.all-lastRec span {
     color: #3FAB3E;
     font-family: 'Days One', sans-serif;
     font-size: 14px;
     padding: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    text-decoration: none; 
-    text-align: center; 
+    text-align: center;
 }
 
-.all-lastRec:hover a {
-    color: white; 
+.all-lastRec:hover span {
+    color: white;
 }
-
-
 

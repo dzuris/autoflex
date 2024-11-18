@@ -17,6 +17,7 @@
     color: #3FAB3E;
     font-family: 'DM Sans', sans-serif;
     margin: 0;
+    /* margin-bottom: 10px; */
 }
 
 .review h1 {
@@ -31,6 +32,7 @@
     margin-right: 8px; 
     font-size: 20px; 
     color: #3FAB3E !important; 
+    /* margin-bottom: 10px; */
 }
 
 .review-boxes {
@@ -41,6 +43,7 @@
     margin-left: 100px;
     margin-bottom: 10px;
     position: relative; 
+    background-color: white;
 }
 
 .review-box {
