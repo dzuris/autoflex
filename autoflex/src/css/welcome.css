@@ -162,3 +162,11 @@
 }
 
 
+@media (max-width: 900px) {
+    .welcome-text-overlay {
+        left: 40px;
+    }
+    .welcome-first-rectangle{
+        flex-direction: column;
+    }
+}

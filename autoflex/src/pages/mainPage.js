@@ -7,7 +7,7 @@ import About from "../components/about";
 import Review from "../components/review";
 import Reservation from "../components/reservation";
 import Fq from "../components/fq";
-import ShowCase from "../components/showCase"
+// import ShowCase from "../components/showCase"
 
 
 const App = () => {
