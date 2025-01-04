@@ -54,7 +54,7 @@
     cursor: pointer;
     transition: background 0.3s ease;
     overflow: visible;
-    width: 100%;
+    width: 40vw;
     max-width: 40vw;
     margin-right: 100px;
     padding-left: 20px; 
