@@ -129,10 +129,10 @@
 }
 
 .review-navigation {
-    position: absolute;
-    top: 70%; 
+    position: relative;
+    /* top: 70%; 
     left: 53%; 
-    transform: translate(-50%);
+    transform: translate(-50%); */
     display: flex;
     justify-content: space-between;
     width: 90%; 
@@ -156,12 +156,13 @@
 }
 
 .arrow-button:first-child {
-    left:-5.7%; 
+    left: 2vw; 
+    top: -9vw; 
 }
 
-
 .arrow-button:last-child {
-    right: 1.6vw; 
+    right: -7.2vw; 
+    top: -9vw; 
 }
 
 .arrow-button:hover {
