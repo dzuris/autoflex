@@ -34,7 +34,7 @@
 .welcome-text-overlay {
     position: absolute;
     top: 30%;
-    left: 110px; 
+    left: 7%; 
     transform: translateY(-50%); 
     color: white;
     font-family: 'Poppins', sans-serif;
