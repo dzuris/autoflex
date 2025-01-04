@@ -169,8 +169,8 @@ body{
 
 .footer-image {
     position: absolute;
-    bottom: 15px; 
-    right: 10px; 
+    bottom: 0.1vw; /* Adjust for viewport scaling */
+    right: 0.52vw;
     width: 15%; 
     height: 10%;
 }
