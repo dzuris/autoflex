@@ -146,7 +146,7 @@ body{
 .contact-map-col{
     display: flex;
     flex-direction:row;
-    gap: 260px;
+    gap: 17vw;
 }
 
 .map{
