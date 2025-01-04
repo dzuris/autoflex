@@ -56,7 +56,7 @@
     overflow: visible;
     width: 40vw;
     max-width: 40vw;
-    margin-right: 100px;
+    /* margin-right: 100px; */
     padding-left: 20px; 
     box-sizing: border-box;
 }
