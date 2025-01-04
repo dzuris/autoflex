@@ -156,12 +156,12 @@
 }
 
 .arrow-button:first-child {
-    left: -40px; 
+    left: 3%; 
     top: -130px; 
 }
 
 .arrow-button:last-child {
-    right: -40px;
+    left: 102%; 
     top: -130px; 
 }
 
