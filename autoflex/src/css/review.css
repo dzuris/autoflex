@@ -156,14 +156,15 @@
 }
 
 .arrow-button:first-child {
-    left: 2vw; 
-    top: -9vw; 
+    left: -40px; 
+    top: -130px; 
 }
 
 .arrow-button:last-child {
-    right: -7.2vw; 
-    top: -9vw; 
+    right: -40px;
+    top: -130px; 
 }
+
 
 .arrow-button:hover {
     background-color: rgba(63, 171, 62, 1); 
