@@ -53,8 +53,8 @@ body{
 .ourServ-box {
     display: flex;
     align-items: center;
-    max-width: 400px;        
-    width: 400px;
+    max-width: 28vw;        
+    width: 28vw;
     border: 1px solid #ddd;
     padding: 10px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1),   
