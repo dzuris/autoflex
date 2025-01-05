@@ -117,3 +117,20 @@
 .faq-item, .faq-item * {
     box-sizing: border-box;
 }
+
+
+@media (max-width: 1285px) {
+    .faq-item{
+        font-size: 13px;
+    }
+
+    .faq-item::after{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 895px) {
+    .faq-item{
+        font-size: 10px;
+    }
+}

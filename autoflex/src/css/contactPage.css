@@ -108,7 +108,8 @@ body{
 }
 
 .contact-footer{
-    height: 18vw;
+    position: relative;
+    height: auto;
     margin-top: 10px;
     background-color: #3FAB3E; 
     color: white;
@@ -169,9 +170,9 @@ body{
 
 .footer-image {
     position: absolute;
-    bottom: 0.1vw; /* Adjust for viewport scaling */
-    right: 0.52vw;
-    width: 15%; 
+    bottom: 10px; 
+    right: 10px ;
+    width: 12%; 
     height: 10%;
 }
 
@@ -194,3 +195,78 @@ body{
     color: black;
     transform: rotate(45deg); 
 }
+
+@media (max-width: 1285px) {
+    .contactArrow-circle  {
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contact-header {
+        margin-left: 40px;
+    }
+
+    .contact h1{
+        margin-left: 40px;
+    }
+
+    .contactAllIcons{
+        margin-left: 40px;
+    }
+
+    .contact-map-col{
+        gap: 5vw;
+    }
+
+    .map{
+        margin-right: 10px;
+        margin-left: 5vw;
+    }
+
+    .footer-p{
+    
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 895px) {
+    .contactArrow-circle  {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    .contact-header {
+        margin-left: 10px;
+    }
+
+    .contact h1{
+        margin-left: 10px;
+    }
+
+    .contactAllIcons{
+        margin-left: 40px;
+    }
+
+    .contact-map-col{
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+    .footer-p {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; 
+        justify-content: center; 
+        margin: 0 auto; 
+        text-align: center; 
+    }
+
+    .contact-footer h1{
+        text-align: center;
+        margin-left: 0;
+    }
+
+}
+

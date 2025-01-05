@@ -103,7 +103,7 @@ body {
   }
 }
 
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .big-logo-title {
     padding-left: 20px;
     margin-right: 11rem;
@@ -121,9 +121,9 @@ body {
   .big-nav ul {
     gap: 3em;
   }
-}
+} */
 
-@media (max-width: 900px) {
+@media (max-width: 1285px){
   .big-logo-title {
     padding-left: 0px;
     /* margin-right: 6rem; */
@@ -170,5 +170,9 @@ body {
     color: grey;
   }
   
-
+  .big-logo-title{
+    margin-left: 0;
+  }
 }
+
+

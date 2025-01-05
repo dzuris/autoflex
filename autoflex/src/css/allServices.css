@@ -105,3 +105,40 @@
     color: white;
 }
 
+@media (max-width: 1285px){
+    .all-services-boxes{
+        margin-left: 40px;
+    }
+
+    .all-service-title {
+        font-size: 13px;
+    }
+
+    .all-service-photo{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 895px){
+    .all-services-boxes{
+        margin-left: 10px;
+    }
+
+    .all-service-title {
+        font-size: 10px;
+    }
+
+    .all-service-photo{
+        width: 20px;
+        height: 20px;
+    }
+
+    .all-services-header{
+        margin-left: 10px;
+    }
+
+    .all-services h1 {
+        margin-left: 10px;
+    }
+}

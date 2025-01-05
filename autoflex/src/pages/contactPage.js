@@ -70,7 +70,7 @@ const Contact = () => {
                                   </div>
                                   
                                   <div className="column-contact">
-                                      <h6 className="dif">Pondelok - Piatok</h6>
+                                      <h6 className="dif">Sobota - Nedeľa</h6>
                                       <h6 className="dif">Zatvorené</h6>
                                   </div>
                               </div>
