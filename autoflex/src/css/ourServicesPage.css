@@ -38,6 +38,7 @@ body{
 .ourServ p{
     margin-left: 120px;
     width: 900px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .ourServ-boxes {
@@ -115,6 +116,7 @@ body{
 .moreOurServP {
     font-size: 12px; 
     /* color: #555;  */
+    font-family: 'DM Sans', sans-serif;
 }
 
 .bigGreen{
@@ -132,6 +134,7 @@ body{
     margin: 0;
     padding: 0;
     color: white;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .moreServ-action-button {
@@ -228,7 +231,7 @@ body{
     }
 
     .arrow-circle {
-        margin-left: 10px;
+        margin-left: 20px;
         margin-bottom: 20px;
     }
     
@@ -236,6 +239,8 @@ body{
     .ourServ  {
         margin-left: 0;
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
     
     .ourServ p{
@@ -249,15 +254,14 @@ body{
     
     .moreOurServ-boxes {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);  
+        grid-template-columns: repeat(2, 1fr);
         justify-content: center;
         align-items: center;
-        margin-left: 60px;
+        margin: 0 auto; 
+        width: fit-content; 
+        gap: 100px;
     }
     
-    .bigGreen p{
-        margin-bottom: 15px;
-    }
 
     .ourServ-boxes{
         justify-content: center;

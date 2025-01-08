@@ -44,11 +44,11 @@ const OurServices = () => {
   return (
     <div>
       <Header/>
+      <div className="arrow-circle"  onClick={handleGoBack} style={{ cursor: 'pointer' }}>
+                  <FaArrowLeft className="arrow-icon"/>
+      </div>
       <div className="ourServRow">
         <div className="ourServ">
-                <div className="arrow-circle"  onClick={handleGoBack} style={{ cursor: 'pointer' }}>
-                  <FaArrowLeft className="arrow-icon"/>
-                </div>
               <div className="ourServ-header">
                   <RiPulseFill className="ourServ-icon" />
                   <h3>ČO PONÚKAME?</h3>
