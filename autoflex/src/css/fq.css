@@ -133,4 +133,20 @@
     .faq-item{
         font-size: 10px;
     }
+
+    .fq{
+        align-items: center;
+    }
+
+    .fq h1, .fq h3 {
+        text-align: center; 
+    }
+
+    .fq-header{
+        margin-left: 0;
+    }
+
+    .faq-container{
+        margin-left: 0;
+    }
 }

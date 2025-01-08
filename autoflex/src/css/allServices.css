@@ -43,7 +43,7 @@
     margin-top: 10px;
     margin-left: 7%;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: #F3F3F3;
 }
 
 .all-service-box {
@@ -121,12 +121,29 @@
 }
 
 @media (max-width: 895px){
-    .all-services-boxes{
-        margin-left: 10px;
+
+    .all-services {
+        align-items: center; 
     }
 
+    .all-services-header {
+        margin-left: 0; 
+        text-align: center;
+    }
+
+    .all-services h1 {
+        margin-left: 0; 
+        text-align: center; 
+    }
+    .all-services-boxes{
+       justify-content: center;
+       margin: 0 auto; 
+       grid-template-columns: repeat(2, 1fr);  
+    }
+
+
     .all-service-title {
-        font-size: 10px;
+        font-size: 8px;
     }
 
     .all-service-photo{
@@ -134,11 +151,9 @@
         height: 20px;
     }
 
-    .all-services-header{
-        margin-left: 10px;
+    .all-service-box{
+        max-width: 150px;
+        width: 150px;
     }
 
-    .all-services h1 {
-        margin-left: 10px;
-    }
 }

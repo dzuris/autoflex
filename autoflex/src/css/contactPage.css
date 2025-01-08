@@ -254,6 +254,10 @@ body{
         margin-left: 10px;
     }
 
+    .map{
+        display: none;
+    }
+
     .footer-p {
         flex-direction: column;
         gap: 20px;

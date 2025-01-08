@@ -8,6 +8,7 @@ import Review from "../components/review";
 import Reservation from "../components/reservation";
 import Fq from "../components/fq";
 // import ShowCase from "../components/showCase"
+import CookieConsent from "react-cookie-consent";
 
 
 const App = () => {
@@ -30,6 +31,8 @@ const App = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  // const [cookies] = useCookies(["cookieConsent"]);
+
   return (
       <div>
         <div>
@@ -45,14 +48,21 @@ const App = () => {
         <div id="review-section">
           <Review />
         </div>
-        <div id="reservation-section">
+        {/* <div id="reservation-section">
           <Reservation />
-        </div>
+        </div> */}
         {/* <div>
           <ShowCase/>
         </div> */}
         <div>
           <Fq id="fq-section" />
+        </div>
+        <div className='cookie-section'>
+          <CookieConsent 
+              location='bottom'
+              style={{background: 'black', textAlign: 'center', zIndex: '99999'}}
+              buttonStyle={{background: '#3FAB3E', color: 'white', justifyContent: 'center', fontSize: '14px'}}
+          >This site use cookies.</CookieConsent>
         </div>
         <footer className='footer-main'> 
           <p>© Copyright 2024 Marinko x Moresko - All right reserved</p>
