@@ -4,11 +4,12 @@ import Header from "../components/bigHeader";
 import Welcome from "../components/welcome";
 import AllServices from "../components/allServices";
 import About from "../components/about";
-import Review from "../components/review";
+// import Review from "../components/review";
 // import Reservation from "../components/reservation";
 import Fq from "../components/fq";
 // import ShowCase from "../components/showCase"
 import CookieConsent from "react-cookie-consent";
+import Google from "../components/google";
 
 
 const App = () => {
@@ -46,7 +47,7 @@ const App = () => {
           <About />
         </div>
         <div id="review-section">
-          <Review />
+          <Google />
         </div>
         {/* <div id="reservation-section">
           <Reservation />

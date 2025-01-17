@@ -44,7 +44,7 @@
 
 .welcome-text-overlay h1 {
     font-size: 48px; 
-    font-family: 'Days One', sans-serif;
+    font-family: 'Days One', 'Arial', sans-serif;
     margin: 0;
     width: 800px;
 }
