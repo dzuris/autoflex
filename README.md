@@ -9,12 +9,9 @@ Webpage for autoflex servis
 
 ## TODO
 
-- porobit stranku
-- dizajn pre mobil
-- vybrat spravnu technologiu na vyvoj
-    - HTML + CSS + JavaScript ma nevyhodu ze sa nedaju vytvarat znovupouzitelne komponenty
-    - kvoli tomu by som dal bud React alebo Vue, React je ez af ale zase toto je mozno trochu overkill na takuto jednoduchu stranku, ale na druhu stranu do buducna by sa ta stranka mohla lahsie rozsirovat
-- porobit skurvene cookies nejako
+- font makcene
+- google review vyzeraju hrozne 
+- pridat rezervaciu (suhlasim s obchodnymi podmienkami)
 
 ## Co potrebujeme od mara
 
