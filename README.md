@@ -101,6 +101,6 @@ Template je v `data/faqs.json`
 
 - Jessie sipka (to co sme mali na webstrankovom predmete ze ta to scrollne hore ked si kdesi v strede stranky bolo to vpravo dolu)
 
-### Authors
+### Author
 
-3 krali (adam, maro, moresko)
+moresko
