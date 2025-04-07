@@ -24,7 +24,9 @@
     margin-top: 0;
     margin-left: 7%;
     font-size: 24px;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
     margin-bottom: 40px;
 }
 
@@ -70,7 +72,9 @@
     height: 120px;
     /* border: 1px solid #ccc; */
     box-sizing: border-box;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
     resize: none;
     overflow-y: auto; 
     white-space: pre-wrap; 

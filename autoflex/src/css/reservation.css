@@ -33,13 +33,17 @@
 .text-rec h4 {
     margin: 0;
     font-size: 16px;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 .text-rec h2 {
     margin: 5px 0 0;
     font-size: 28px;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
     width: 500px;
 }
 
@@ -134,7 +138,9 @@
 .mid-rec h1 {
     font-size: 28px;
     color: #2B4448;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 .reservation-form {
@@ -152,7 +158,9 @@
     font-size: 12px;
     border: 1px solid #ccc;
     box-sizing: border-box; 
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 .form-input-big {
@@ -162,7 +170,9 @@
     height: 120px;
     border: 1px solid #ccc;
     box-sizing: border-box;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
     resize: none;
     overflow-y: auto; 
     white-space: pre-wrap; 
@@ -177,7 +187,9 @@
     border: none;
     cursor: pointer;
     align-self: start;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 .submit-button:hover {

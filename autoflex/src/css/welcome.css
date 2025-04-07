@@ -47,7 +47,9 @@
 
 .welcome-text-overlay h1 {
     font-size: 48px; 
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
     margin: 0;
     width: 800px;
 }
@@ -67,7 +69,9 @@
     border: none;
     border-radius: 1px;
     cursor: pointer;
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
     transition: background-color 0.3s ease;
 }
 
@@ -103,7 +107,9 @@
 }
 
 .welcome-first-rectangle h3{
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 .welcome-number-tog h6{
@@ -132,7 +138,9 @@
 }
 
 .green-one h3{
-    font-family: 'Days One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
 }
 
 .green-aproval{
