@@ -11,7 +11,7 @@ const App = () => {
       <div>
       <ScrollToTop />
         <Routes>
-          <Route path="/home" element={<MP />} />
+          <Route path="/" element={<MP />} />
           <Route path="/contact" element={<CP />} />
           <Route path="/service" element={<OSP />} />
         </Routes>

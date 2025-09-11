@@ -18,12 +18,12 @@ const BigHeader = () => {
     const aboutSection = document.getElementById('about-section');
     sessionStorage.setItem('scrollToAbout', 'true');
 
-    if (location.pathname === '/home') {
+    if (location.pathname === '/') {
       if (aboutSection) {
         aboutSection.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      navigate('/home');
+      navigate('/');
     }
   };
 
@@ -32,17 +32,17 @@ const BigHeader = () => {
     const reservationSection = document.getElementById('reservation-section');
     sessionStorage.setItem('scrollToReservation', 'true');
 
-    if (location.pathname === '/home') {
+    if (location.pathname === '/') {
       if (reservationSection) {
         reservationSection.scrollIntoView({ behavior: 'smooth' });
       }
     } else {
-      navigate('/home');
+      navigate('/');
     }
   };
 
   useEffect(() => {
-    if (location.pathname === '/home') {
+    if (location.pathname === '/') {
       if (sessionStorage.getItem('scrollToAbout') === 'true') {
         const aboutSection = document.getElementById('about-section');
         if (aboutSection) {
@@ -60,7 +60,7 @@ const BigHeader = () => {
       }
     }
 
-    if (location.pathname !== '/home') {
+    if (location.pathname !== '/') {
       sessionStorage.removeItem('scrollToAbout');
       sessionStorage.removeItem('scrollToReservation');
     }
@@ -68,21 +68,21 @@ const BigHeader = () => {
 
   return (
     <nav className="big-nav">
-      <a href="/home" className="big-logo-title">
+      <a href="/" className="big-logo-title">
         <img src={logo} alt="Logo" />
       </a>
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
         <li>
-          <a href="/home">Domov</a>
+          <a href="/">Domov</a>
         </li>
         <li>
-          <Link to="/home" onClick={handleAboutClick}>O nás</Link>
+          <Link to="/" onClick={handleAboutClick}>O nás</Link>
         </li>
         <li className="services">
           <a href="/service">Služby</a>
         </li>
         <li>
-          <Link to="/home" onClick={handleReservationClick}>Rezervácia</Link>
+          <Link to="/" onClick={handleReservationClick}>Rezervácia</Link>
         </li>
         <li>
           <Link to="/contact">Kontakty</Link>
