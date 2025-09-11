@@ -1,26 +1,26 @@
 [
     {
-        "question": "How often should I change the oil?",
-        "answer": "raz za 10 rokov, ak sa to dojebe sry"
+        "question": "Ako často meniť motorový olej?",
+        "answer": "Výmena oleja je základ. Väčšina áut potrebuje nový olej každých 10 000 – 15 000 km alebo raz ročne, podľa toho, čo nastane skôr. Jazdíš často v meste? Menšia vzdialenosť = častejšie výmeny. Pri každej výmene oleja sa mení aj olejový filter"
     },
     {
-        "question": "When should I check fluid levels?",
-        "answer": "ked uz ziadny fluid neni, tak predtym"
+        "question": "Ako si skontrolovať hladinu kvapalín?",
+        "answer": "Raz za mesiac skontroluj:\nOlej – meranie treba uskutočniť vždy pri studenom motore podľa mierky v motorovom priestore alebo v nastaveniach vozidla ak vozidlo nemá mierku.\nChladiaca a brzdová kvapalina – hladina medzi MIN a MAX."
     },
     {
-        "question": "How to check tire pressure?",
-        "answer": "Go to a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station ato a gas station and use a pressure gauge."
+        "question": "Aký je správny tlak v pneumatikách?",
+        "answer": "Odporúčaný tlak často nájdeš:\nvo dverách vodiča,\nna viečku palivovej nádrže,\nalebo v návode auta.\nZvyčajne sa pohybuje medzi 2.1 – 2.5 baru. Príliš nízky tlak = vyššia spotreba a opotrebenie.\nSkontroluj raz mesačne, ideálne na studené pneumatiky."
     },
     {
-        "question": "What is the recommended tire pressure?",
-        "answer": "Typically 32-35 PSI, check your manual for details."
+        "question": "Prečo počúvať nezvyčajné zvuky?",
+        "answer": "Klepkanie, škrípanie alebo dunenie z motora či bŕzd? Auto ti hovorí, že niečo nie je v poriadku. Ignorovanie môže znamenať drahú opravu. Nečakaj – zastav sa v Autoflexe a nechaj to na nás."
     },
     {
-        "question": "How often should I replace my air filter?",
-        "answer": "Every 15,000 to 30,000 miles, depending on conditions."
+        "question": " Prečo olej v prevodovke nie je doživotný?",
+        "answer": "Výraz „doživotný olej“ často znamená „do konca životnosti komponentu“ – nie auta. Reálne však olej v automatickej aj manuálnej prevodovke časom degraduje:\nStráca viskozitu\nZnečisťuje sa kovovými čiastočkami\nZnižuje svoju účinnosť a môže poškodiť prevodovku\nOdporúča sa výmena každých 60 000 – 100 000 km, najmä ak často jazdíš v meste alebo ťaháš príves. V Autoflexe ti skontrolujeme stav oleja a odporučíme, či už je čas na výmenu."
     },
     {
-        "question": "When should I replace windshield wipers?",
-        "answer": "Usually every 6-12 months or when visibility is poor."
+        "question": "Kedy je čas na nové brzdové doštičky?",
+        "answer": "Ak počuješ pískanie, cítiš dlhšiu brzdnú dráhu, alebo máš viac než 40 000 km najazdených bez výmeny, môže byť čas ich skontrolovať. Bezpečnosť na prvom mieste – u nás to zistíš rýchlo a bez čakania."
     }
 ]
