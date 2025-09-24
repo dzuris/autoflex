@@ -1,0 +1,81 @@
+.sponsors-container {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Wrapper makes slider sit between 10%–90% */
+.sponsors-slider-wrapper {
+  width: 85%;       /* 100% - 10% left - 10% right */
+  margin: 0 auto;   /* centers wrapper */
+  overflow: hidden; /* hide overflowed logos */
+}
+
+.sponsors-slider {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 20s linear infinite;
+}
+
+.sponsor {
+  flex: 0 0 auto;
+  width: 200px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.sponsor img {
+  height: 60px;
+  object-fit: contain;
+}
+
+.sponosor-header {
+  margin-top: 70px;
+  margin-left: 7%;
+  display: flex;
+  align-items: center;
+}
+
+.sponsors-container h3 {
+  font-size: 15px;
+  color: #3FAB3E;
+  font-family: 'DM Sans', sans-serif;
+  margin: 0;
+}
+
+.sponsors-container h1 {
+  margin-top: 0;
+  margin-left: 7%;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 895px) {
+  .sponosor-header {
+    justify-content: center;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sponsors-container h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .sponsors-slider-wrapper {
+    width: 90%; /* looser margins on small screens */
+  }
+}

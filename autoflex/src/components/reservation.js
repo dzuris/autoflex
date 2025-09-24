@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import '../css/reservation.css';
 import gt from '../images/greenTire.png';
 import { RiPulseFill } from 'react-icons/ri';
@@ -8,26 +7,29 @@ import {LuPhoneCall} from 'react-icons/lu'
 import { FaRegEnvelope } from "react-icons/fa";
 
 const Reservation = () => {
-    const form = useRef();
+    const [result, setResult] = React.useState("");
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs
-        .sendForm('service_b5l5qbi',  //service_id
-        'template_v52wni7',            //template_id
-        form.current, {
-            publicKey: 'zSGVd6X9Rpi9MFy3H',     // public_key --- integration --- API KEY
-        })
-        .then(
-            () => {
-            console.log('SUCCESS!');
-            form.current.reset();
-            },
-            (error) => {
-            console.log('FAILED...', error.text);
-            },
-        );
+    const onSubmit = async (event) => {
+      event.preventDefault();
+      setResult("Sending....");
+      const formData = new FormData(event.target);
+  
+      formData.append("access_key", "84793629-e7cf-4291-9a3b-64b3164560a3");
+  
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+  
+      const data = await response.json();
+  
+      if (data.success) {
+        setResult("Form Submitted Successfully");
+        event.target.reset();
+      } else {
+        console.log("Error", data);
+        setResult(data.message);
+      }
     };
     return (
         <div className="reservation">
@@ -73,14 +75,15 @@ const Reservation = () => {
                 <div className="black-rectangle">
                 <div className="mid-rec">
                     <h1>REZERVÁCIA</h1>
-                    <form className="reservation-form"  ref={form} onSubmit={sendEmail}>
-                        <input type="text" placeholder="MENO A PRIEZVISKO" className="form-input" name='user_name'/>
-                        <input type="tel" placeholder="TELEFÓN" className="form-input" name='user_phone'/>
-                        <input type="email" placeholder="EMAIL" className="form-input" name='user_email' />
-                        <input type="datetime-local" className="form-input" name='user_date' />
-                        <textarea class="form-input-big" placeholder="EČV VOZIDLA A PROBLÉM" name='message'></textarea>
+                    <form className="reservation-form" onSubmit={onSubmit}>
+                        <input type="text" placeholder="MENO A PRIEZVISKO" className="form-input" name='name' required/>
+                        <input type="tel" placeholder="TELEFÓN" className="form-input" name='phone' required/>
+                        <input type="email" placeholder="EMAIL" className="form-input" name='email' required/>
+                        <input type="datetime-local" className="form-input" name='date' required/>
+                        <textarea className="form-input-big" placeholder="EČV VOZIDLA A PROBLÉM" name='message' required></textarea>
                         <button type="submit" className="submit-button" value="Send">ODOSLAŤ</button>
                     </form>
+                    <p className="form-result">{result}</p>
                 </div>
             </div>
             </div>

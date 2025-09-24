@@ -5,22 +5,24 @@
 }
 
 .background {
-    width: 80%; 
-    height: 100%;
+    width: 80%;   
+    height: 750px;
     object-fit: cover;
     position: relative;
 }
 
+
+
 .content {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
-    column-gap: 20px; 
+    /* column-gap: 30px; */
     position: absolute;
-    top: 15%;
+    top: 90px;
     left: 0;
     z-index: 2;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 17px;
     color: white;
 }
 
@@ -35,15 +37,14 @@
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
 .text-rec h2 {
-    margin: 5px 0 0;
-    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
     width: 500px;
 }
 
@@ -54,17 +55,26 @@
     margin-bottom: 50px;
 }
 
-
 .black-rectangle {
     grid-column: 2;
     width: 60%; 
+    max-width: 300px;   /* optional: maximum width */
+    min-width: 200px;   /* prevents rectangle from getting too narrow */
     height: 550px; 
+    min-height: 400px;  /* prevents rectangle from getting too short */
     max-height: 100%;
     background-color: white;
     border: 0.1px solid black;
     align-self: center;
-    margin-left: 25%; 
+    margin-left: 35%; 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    resize: both;       /* allow user to resize */
 }
+
 
 .reservation-header {
     display: flex;
@@ -140,7 +150,6 @@
     color: #2B4448;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
 .reservation-form {
@@ -160,7 +169,6 @@
     box-sizing: border-box; 
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
 .form-input-big {
@@ -189,9 +197,88 @@
     align-self: start;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
 .submit-button:hover {
     background-color: #1f3336; 
+}
+
+@media (max-width: 1300px) {
+    .black-rectangle{
+        margin-left: 30%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .black-rectangle{
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .black-rectangle{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .black-rectangle{
+        margin-left: 0%;
+    }
+}
+
+/* TABLET & MOBILE - center everything */
+@media (max-width: 895px) {
+    .background {
+        display: none; /* skryjeme zelené pozadie */
+    }
+
+    .icon-l{
+        color: #3FAB3E;
+    }
+
+    .allIcons {
+        display: none; /* skryjeme ikony */
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* vertikálne stred */
+        align-items: center;     /* horizontálne stred */
+        min-height: 100vh;       /* celá výška obrazovky */
+        position: static;         /* zruší absolute */
+        gap: 20px;
+        text-align: center;
+        padding: 0 20px;
+        color: black;
+    }
+
+    .text-rec {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .reservation-header {
+        justify-content: center; /* stred pre ikonu + text */
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .text-rec h2, .text-rec p {
+        text-align: center; /* nadpis a odsek stred */
+        width: 100%;
+    }
+
+    .black-rectangle {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .reservation-header{
+        color: #3FAB3E;
+    }
 }

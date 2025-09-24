@@ -5,7 +5,7 @@ import Welcome from "../components/welcome";
 import AllServices from "../components/allServices";
 import About from "../components/about";
 // import Review from "../components/review";
-// import Reservation from "../components/reservation";
+import Reservation from "../components/reservation";
 import Sponsors from '../components/sponsors';
 import Fq from "../components/fq";
 // import ShowCase from "../components/showCase"
@@ -50,12 +50,12 @@ const App = () => {
         <div id="review-section">
           <Google />
         </div>
+        <div id="reservation-section">
+          <Reservation />
+        </div>
         <div id="sponsors-section">
             <Sponsors/>
         </div>
-        {/* <div id="reservation-section">
-          <Reservation />
-        </div> */}
         {/* <div>
           <ShowCase/>
         </div> */}
