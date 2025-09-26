@@ -5,11 +5,10 @@
   overflow: hidden;
 }
 
-/* Wrapper makes slider sit between 10%–90% */
 .sponsors-slider-wrapper {
-  width: 85%;       /* 100% - 10% left - 10% right */
-  margin: 0 auto;   /* centers wrapper */
-  overflow: hidden; /* hide overflowed logos */
+  /* width: 85%;        */
+  margin: 0 auto;  
+  overflow: hidden;
 }
 
 .sponsors-slider {

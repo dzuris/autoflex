@@ -1,35 +1,32 @@
 .reservation {
     margin-top: 90px;
-    margin-left: 1vw;
     position: relative;
 }
 
 .background {
-    width: 80%;   
+    width: 100%;   
     height: 750px;
     object-fit: cover;
     position: relative;
 }
 
-
-
 .content {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    /* column-gap: 30px; */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;           
     position: absolute;
-    top: 90px;
+    top: 0;
     left: 0;
     z-index: 2;
     width: 100%;
-    padding: 0 17px;
+    height: 100%;                  
+    padding: 0 7%;               
     color: white;
+    box-sizing: border-box;
 }
 
 .text-rec {
-    grid-column: 1; 
-    z-index: 2;
-    margin-left: 10%;
+    max-width: 500px;
 }
 
 .text-rec h4 {
@@ -40,41 +37,32 @@
 }
 
 .text-rec h2 {
-    margin: 0;
-    padding: 0;
+    margin: 10px 0;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    width: 500px;
 }
 
 .text-rec p {
-    width: 450px;
     font-size: 18px;
     font-family: 'DM Sans', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .black-rectangle {
-    grid-column: 2;
-    width: 60%; 
-    max-width: 300px;   /* optional: maximum width */
-    min-width: 200px;   /* prevents rectangle from getting too narrow */
-    height: 550px; 
-    min-height: 400px;  /* prevents rectangle from getting too short */
-    max-height: 100%;
     background-color: white;
     border: 0.1px solid black;
-    align-self: center;
-    margin-left: 35%; 
+    width: 100%;
+    max-width: 350px;
+    min-height: 400px;
+    padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    resize: both;       /* allow user to resize */
+    justify-content: center; /* obsah vnútri na stred */
+    align-items: center;
+    color: black;
 }
-
 
 .reservation-header {
     display: flex;
@@ -180,7 +168,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
     resize: none;
     overflow-y: auto; 
     white-space: pre-wrap; 
@@ -189,6 +176,7 @@
 
 .submit-button {
     padding: 10px 20px;
+    width: 100%;
     font-size: 16px;
     color: white;
     background-color: #2B4448; 
@@ -203,31 +191,7 @@
     background-color: #1f3336; 
 }
 
-@media (max-width: 1300px) {
-    .black-rectangle{
-        margin-left: 30%;
-    }
-}
-
-@media (max-width: 1200px) {
-    .black-rectangle{
-        margin-left: 20%;
-    }
-}
-
-@media (max-width: 1100px) {
-    .black-rectangle{
-        margin-left: 10%;
-    }
-}
-
-@media (max-width: 1000px) {
-    .black-rectangle{
-        margin-left: 0%;
-    }
-}
-
-/* TABLET & MOBILE - center everything */
+/* TABLET & MOBILE */
 @media (max-width: 895px) {
     .background {
         display: none; /* skryjeme zelené pozadie */
@@ -247,7 +211,7 @@
         justify-content: center; /* vertikálne stred */
         align-items: center;     /* horizontálne stred */
         min-height: 100vh;       /* celá výška obrazovky */
-        position: static;         /* zruší absolute */
+        position: static;        /* zruší absolute */
         gap: 20px;
         text-align: center;
         padding: 0 20px;
@@ -261,14 +225,12 @@
     }
 
     .reservation-header {
-        justify-content: center; /* stred pre ikonu + text */
+        justify-content: center; 
         margin-bottom: 20px;
-        display: flex;
-        align-items: center;
     }
     
     .text-rec h2, .text-rec p {
-        text-align: center; /* nadpis a odsek stred */
+        text-align: center;
         width: 100%;
     }
 
