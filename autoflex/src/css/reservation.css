@@ -210,7 +210,6 @@
         flex-direction: column;
         justify-content: center; /* vertikálne stred */
         align-items: center;     /* horizontálne stred */
-        min-height: 100vh;       /* celá výška obrazovky */
         position: static;        /* zruší absolute */
         gap: 20px;
         text-align: center;
