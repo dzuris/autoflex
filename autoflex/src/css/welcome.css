@@ -46,12 +46,15 @@
 }
 
 .welcome-text-overlay h1 {
-    font-size: 48px; 
+    /* font-size: 48px;  */
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-
-    margin: 0;
-    width: 800px;
+    color: #FFF;
+    /* font-family: Montserrat; */
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 .welcome-text-overlay p {
@@ -140,7 +143,6 @@
 .green-one h3{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
 }
 
 .green-aproval{
@@ -163,6 +165,8 @@
     font-size: 9px;
     width: 160px;
     text-align: left;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .green-col {

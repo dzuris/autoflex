@@ -51,7 +51,7 @@
 
 .black-rectangle {
     background-color: white;
-    border: 0.1px solid black;
+    /* border: 0.1px solid black; */
     width: 100%;
     max-width: 350px;
     min-height: 400px;
