@@ -79,7 +79,9 @@ const Reservation = () => {
                         <input type="text" placeholder="MENO A PRIEZVISKO" className="form-input" name='name' required/>
                         <input type="tel" placeholder="TELEFÓN" className="form-input" name='phone' required/>
                         <input type="email" placeholder="EMAIL" className="form-input" name='email' required/>
-                        <input type="datetime-local" className="form-input" name='date' required/>
+                        <input type="datetime-local" className="form-input" name='date' required   min={new Date(Date.now() + 14 * 24 * 60 * 60 * 1000)
+                            .toISOString()
+                            .slice(0, 16)}/>
                         <textarea className="form-input-big" placeholder="EČV VOZIDLA A PROBLÉM" name='message' required></textarea>
                         <button type="submit" className="submit-button" value="Send">ODOSLAŤ</button>
                     </form>
