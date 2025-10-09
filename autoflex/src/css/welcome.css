@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 
-
 .welcome-full-page-image {
     position: absolute;
     top: 70px; 
@@ -34,6 +33,7 @@
     pointer-events: none;
 }
 
+/* === HERO TEXT === */
 .welcome-text-overlay {
     position: absolute;
     top: 30%;
@@ -46,14 +46,10 @@
 }
 
 .welcome-text-overlay h1 {
-    /* font-size: 48px;  */
     font-family: 'Montserrat', sans-serif;
     color: #FFF;
-    /* font-family: Montserrat; */
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: uppercase;
 }
 
@@ -74,7 +70,6 @@
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-
     transition: background-color 0.3s ease;
 }
 
@@ -82,20 +77,7 @@
     background-color: green; 
 }
 
-.hidden-sign {
-    visibility: hidden;
-}
-
-
-.green-rectangle {
-    background-color: #3FAB3E;;
-    padding: 20px;
-    text-align: center;
-    margin-top: 70vh; 
-    height: auto;
-}
-
-
+/* === CONTACT BOX === */
 .welcome-first-rectangle {
     position: relative; 
     top: 50px; 
@@ -109,13 +91,7 @@
     color: white;
 }
 
-.welcome-first-rectangle h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-
-}
-
-.welcome-number-tog h6{
+.welcome-number-tog h6 {
     font-family: 'DM Sans', sans-serif;
     font-size: 9px;
 }
@@ -125,141 +101,155 @@
   margin: 0;  
 }
 
-.welcome-number-tog h3 + h6 {
-  margin-top: 1px;  
-}
-
-.green-one{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    padding-right: 8.2vw;
-}
-
-.green-one img{
-    padding: 20px;
-}
-
-.green-one h3{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-.green-aproval{
-    display: flex;
-    justify-content: center;
-}
-
-.green-one  h3,
-.green-one h6 {
-    color: white;
-    margin-bottom: 0;  
-}
-
-.green-one  h3 + h6 {
-  margin-top: 1px;  
-  text-align: left;
-}
-
-
-
-.green-one h6{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 9px;
-    width: 160px;
-    
-    font-style: normal;
-    font-weight: 400;
-}
-
-.green-col {
-   
-    flex-direction: column; 
-    align-items: center;  
-    text-align: center;  
-}
-
-.welcome-contact-row{
+.welcome-contact-row {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
 
-@media (max-width: 1285px) {
-    .green-one img{
-        width: 80px;
-        height: 80px;
-    
-    }
+/* === GREEN SECTION === */
+.green-section {
+  background-color: #3FAB3E;
+  padding: 28px 15px;
+  color: white;
+  text-align: center;
+  margin-top: 70vh;
+}
 
-    .green-one{
-        padding-right: 0;
-        padding: 0;
-        margin: 0;
-    }
+.green-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-    .green-one  h3{
-        font-size: 15px;
-    }
+.green-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  background: none;
+  padding: 10px 15px;
+  flex: 1 1 300px;
+  max-width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+/* .green-card:hover {
+  transform: translateY(-3px);
+} */
+
+.green-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.green-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.green-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.green-text p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+  max-width: 220px;
+}
+
+/* === ROTATING CARD ON MOBILE === */
+.fade-cycle {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.fade-cycle.show {
+  opacity: 1;
 }
 
 @media (max-width: 895px) {
-    .welcome-text-overlay {
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
 
-        width: 95vw;          /* ✅ allow the whole overlay to expand across most of the viewport */
-        max-width: none;       /* remove desktop width limit */
-        padding: 0 2.5vw;      /* add little padding on sides */
-    }
+  .green-container {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .welcome-text-overlay h1 {
-        font-size: 28px;
-        width: 100%;           /* ✅ use full available width of the overlay */
-        text-align: center;
-        word-wrap: break-word; 
-    }
+  .green-card {
+    flex-direction: column;
+    text-align: center;
+    max-width: 280px;
+    flex: 0px;
+  }
 
-    .welcome-text-overlay p {
-        font-size: 0.8rem;
-        width: 100%; 
-    }
+  .green-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px;
+  }
 
-    .welcome-first-rectangle {
-        flex-direction: column;
-        align-items: center; 
-    }
-    
+  .green-text p {
+    max-width: 100%;
+  }
+}
 
-    .green-one img {
-        width: 80px;
-        height: 80px;
-    }
+/* === RESPONSIVE TEXT === */
+@media (max-width: 1285px) {
+  .welcome-text-overlay h1 {
+    font-size: 36px;
+  }
+  .welcome-text-overlay p {
+    width: 80%;
+  }
+}
 
-    .green-one {
-        padding-right: 0;
-        padding: 0;
-        margin: 0;
-    }
+@media (max-width: 895px) {
+  .welcome-text-overlay {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95vw;
+    max-width: none;
+    padding: 0 2.5vw;
+  }
 
-    .green-one h3 {
-        font-size: 15px;
-    }
+  .welcome-text-overlay h1 {
+    font-size: 28px;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word; 
+  }
 
-    .green-aproval {
-        flex-direction: column;
-    }
+  .welcome-text-overlay p {
+    font-size: 0.8rem;
+    width: 100%; 
+  }
 
-    .welcome-contact-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        margin-top: 10px;
-    }
+  .welcome-first-rectangle {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .welcome-contact-row {
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
 }

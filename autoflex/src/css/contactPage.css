@@ -80,13 +80,10 @@ font-weight: bold;
     flex-direction: column;
 }
 
-.contact-to-row h2, h6{
+.contact-to-row h2, p{
     margin: 0;
     padding: 0;
 }
-
-
-
 
 
 .contactIconWithLabel-sec{
@@ -140,6 +137,7 @@ font-weight: bold;
 
 .dif{
     font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
     font-size: 14px;
 }
 

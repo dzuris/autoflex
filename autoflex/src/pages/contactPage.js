@@ -5,7 +5,7 @@ import '../css/contactPage.css';
 import { FaLocationDot } from "react-icons/fa6";
 import {LuPhoneCall} from 'react-icons/lu'
 import { FaRegEnvelope } from "react-icons/fa";
-import sl from '../images/smallerLogo.png';
+// import sl from '../images/smallerLogo.png';
 import { FaArrowLeft } from "react-icons/fa6";
 import { useNavigate } from 'react-router-dom';
 
@@ -36,7 +36,7 @@ const Contact = () => {
                               </div>
                                   <div className="contact-to-row">
                                       <h2 className="contactIconLabel">ADRESA</h2>
-                                      <h6 className="biggerH">M. R. Štefánika 66, 01001 Žilina</h6>
+                                      <p className="biggerH">M. R. Štefánika 66, 01001 Žilina</p>
                                   </div>
                           </div>
                           <div className="contactIconWithLabel">
@@ -45,7 +45,7 @@ const Contact = () => {
                               </div>
                                   <div className="contact-to-row">
                                       <h2 className="contactIconLabel">EMAIL</h2>
-                                      <h6 className="biggerH">autoflex@autoflex.sk</h6>
+                                      <p className="biggerH">autoflex@autoflex.sk</p>
                                   </div>
                           </div>
                           <div className="contactIconWithLabel">
@@ -54,7 +54,7 @@ const Contact = () => {
                               </div>
                                   <div className="contact-to-row">
                                       <h2 className="contactIconLabel">TELEFÓN</h2>
-                                      <h6 className="biggerH">+421 911 528 064</h6>
+                                      <p className="biggerH">+421 911 528 064</p>
                                   </div>
                           </div>
                           <div className="contactIconWithLabel-sec">
@@ -65,13 +65,13 @@ const Contact = () => {
                                   <h2 className="contactIconLabel-sec">OTVÁRACIE HODINY</h2>
                                   
                                   <div className="column-contact">
-                                      <h6 className="dif">Pondelok - Piatok</h6>
-                                      <h6 className="dif">8:00 - 17:00</h6>
+                                      <p className="biggerH">Pondelok - Piatok</p>
+                                      <p className="biggerH">8:00 - 17:00</p>
                                   </div>
                                   
                                   <div className="column-contact">
-                                      <h6 className="dif">Sobota - Nedeľa</h6>
-                                      <h6 className="dif">Zatvorené</h6>
+                                      <p className="biggerH">Sobota - Nedeľa</p>
+                                      <p className="biggerH">Zatvorené</p>
                                   </div>
                               </div>
                           </div>
@@ -106,7 +106,7 @@ const Contact = () => {
             <p>mail: autoflex@autoflex.sk</p>  
           </div>
         </div>
-        <img src={sl} alt="FooterImg" className="footer-image"/>
+        {/* <img src={sl} alt="FooterImg" className="footer-image"/> */}
       </footer>
     </div>
   );
