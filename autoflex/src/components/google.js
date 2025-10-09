@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "../css/review.css";
 import { RiPulseFill } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const Google = () => {
   useEffect(() => {
@@ -26,6 +27,16 @@ const Google = () => {
         className="elfsight-app-57e212da-54bb-48c4-a115-ee164d93580d"
         data-elfsight-app-lazy
       ></div>
+        <div className='all-lastRec'>
+        <a 
+            href="https://g.page/r/CTv9isPGr2B5EBM/review" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="all-lastRec"
+          >
+            <span>ZANECHAJTE NÁM RECENZIU</span>
+          </a>
+      </div>
     </div>
   );
 };

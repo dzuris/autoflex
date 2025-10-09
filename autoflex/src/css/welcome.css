@@ -158,13 +158,16 @@
 
 .green-one  h3 + h6 {
   margin-top: 1px;  
+  text-align: left;
 }
+
+
 
 .green-one h6{
     font-family: 'DM Sans', sans-serif;
     font-size: 9px;
     width: 160px;
-    text-align: left;
+    
     font-style: normal;
     font-weight: 400;
 }
@@ -174,6 +177,12 @@
     flex-direction: column; 
     align-items: center;  
     text-align: center;  
+}
+
+.welcome-contact-row{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
 }
 
 @media (max-width: 1285px) {
@@ -196,18 +205,24 @@
 
 @media (max-width: 895px) {
     .welcome-text-overlay {
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
+
+        width: 95vw;          /* ✅ allow the whole overlay to expand across most of the viewport */
+        max-width: none;       /* remove desktop width limit */
+        padding: 0 2.5vw;      /* add little padding on sides */
     }
 
     .welcome-text-overlay h1 {
-        font-size: 30px;
-        width: 100%; 
+        font-size: 28px;
+        width: 100%;           /* ✅ use full available width of the overlay */
+        text-align: center;
+        word-wrap: break-word; 
     }
 
     .welcome-text-overlay p {
@@ -219,25 +234,32 @@
         flex-direction: column;
         align-items: center; 
     }
+    
 
-    .green-one img{
+    .green-one img {
         width: 80px;
         height: 80px;
-    
     }
 
-    .green-one{
+    .green-one {
         padding-right: 0;
         padding: 0;
         margin: 0;
     }
 
-    .green-one  h3{
+    .green-one h3 {
         font-size: 15px;
     }
 
-    .green-aproval{
+    .green-aproval {
         flex-direction: column;
-    
+    }
+
+    .welcome-contact-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 10px;
     }
 }

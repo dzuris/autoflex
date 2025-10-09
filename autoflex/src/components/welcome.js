@@ -21,10 +21,12 @@ const MainPage = () => {
                     <p>PROFESIONÁLNE SLUŽBY PRE VŠETKY TYPY VOZIDIEL. RÝCHLY, SPOĽAHLIVÝ A ODBORNÝ SERVIS.</p>
                     <div className="welcome-first-rectangle">
                         <button onClick={scrollToReservation} className="welcome-action-button">REZERVÁCIA TERMÍNU</button>
+                        <div className="welcome-contact-row">
                         <LuPhoneCall className="welcome-phoneIcon"/>
-                        <div className="welcome-number-tog">
-                            <h3>+421 911 528 064</h3>
-                            <h6>24-HODINOVÁ ASISTENČNÁ LINKA</h6>
+                            <div className="welcome-number-tog">
+                                <h3>+421 911 528 064</h3>
+                                <h6>24-HODINOVÁ ASISTENČNÁ LINKA</h6>
+                            </div>
                         </div>
                     </div>
                 </div>

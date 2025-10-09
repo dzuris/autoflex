@@ -34,7 +34,7 @@ const Contact = () => {
                               <div className="contactIconWrapper">
                                   <FaLocationDot className="contactLocationIcon"/>
                               </div>
-                                  <div className="contact'to-row">
+                                  <div className="contact-to-row">
                                       <h2 className="contactIconLabel">ADRESA</h2>
                                       <h6 className="biggerH">M. R. Štefánika 66, 01001 Žilina</h6>
                                   </div>
