@@ -217,6 +217,10 @@
 }
 
 @media (max-width: 895px) {
+
+.welcome-phoneIcon {
+    margin-top: 9px;
+}
   .welcome-text-overlay {
     top: 40%;
     left: 50%;
