@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/sponsors.css";
-import sponsor_1 from '../images/sponsor1.png';
+// import sponsor_1 from '../images/sponsor1.png';
 import sponsor_2 from '../images/sponsor2.png';
 import sponsor_3 from '../images/sponsor3.png';
 import sponsor_4 from '../images/sponsor4.png';

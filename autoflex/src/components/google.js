@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "../css/review.css";
 import { RiPulseFill } from "react-icons/ri";
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const Google = () => {
   useEffect(() => {
