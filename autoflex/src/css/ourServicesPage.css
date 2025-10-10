@@ -161,7 +161,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     margin-top: 15px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
   }
   
   .moreServ-action-button:hover {
