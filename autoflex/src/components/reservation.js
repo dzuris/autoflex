@@ -14,7 +14,7 @@ const Reservation = () => {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "84793629-e7cf-4291-9a3b-64b3164560a3");
+      formData.append("access_key", "8493d00a-86c1-479f-8317-0706d7d1a6ee");
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
