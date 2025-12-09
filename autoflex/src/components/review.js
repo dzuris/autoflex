@@ -34,7 +34,7 @@ const Review = () => {
                 <RiPulseFill className="icon" />
                 <h3>RECENZIE</h3>
             </div>
-            <h1>ČO O NÁS HOVORIA KLIENTI</h1>
+            <h2>ČO O NÁS HOVORIA KLIENTI</h2>
 
             <div className="review-boxes">
                 {currentReviews.map((review, index) => (

@@ -30,7 +30,7 @@
 }
 
 .column h4 {
-    font-size: 18px;
+    font-size: 15px;
     font-family: 'DM Sans', sans-serif;
     color: #3FAB3E;
     margin: 0;
@@ -42,19 +42,20 @@
 }
 
 .column h2 {
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 24px;
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #333;
+    margin-bottom: 20px;
 }
 
 .text {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
     text-align: left;
-    margin: 10px 40px 0 100px;
-    width: 460px;
+    margin: 0px 40px 30px 100px;
+    width: 450px;
 }
 
 .column img {

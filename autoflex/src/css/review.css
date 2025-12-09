@@ -17,7 +17,15 @@
     color: #3FAB3E;
     font-family: 'DM Sans', sans-serif;
     margin: 0;
-    /* margin-bottom: 10px; */
+    /* margin-bot */
+}
+
+.review h2{
+    font-size: 24px;
+    margin-top: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333;
 }
 
 .review h1 {

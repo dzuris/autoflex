@@ -54,7 +54,7 @@ const Contact = () => {
                               </div>
                                   <div className="contact-to-row">
                                       <h2 className="contactIconLabel">TELEFÓN</h2>
-                                      <p className="biggerH">+421 911 528 064</p>
+                                      <p className="biggerH">+421 903 528 064</p>
                                   </div>
                           </div>
                           <div className="contactIconWithLabel-sec">

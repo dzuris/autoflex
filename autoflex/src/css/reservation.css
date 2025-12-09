@@ -39,14 +39,15 @@
 
 .text-rec h4 {
   margin: 0;
-  font-size: 16px;
+  font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
 
 .text-rec h2 {
-  margin: 10px 0;
-  font-size: 28px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 24px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   max-width: 400px;
@@ -133,7 +134,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 20px  rgba(0, 0, 0, 0.2); */
   /* border-radius: 10px; */
 }
 
@@ -212,6 +213,9 @@
 
 /* 📱 Responsive design */
 @media (max-width: 895px) {
+  .text-rec h2 {
+    max-width: 900px;
+  }
 
     .form-result{
         margin-top: -10px;
